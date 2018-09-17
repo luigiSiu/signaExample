@@ -8,9 +8,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class NewsFeedPage extends BasePage {
 
   By publishButton = By.cssSelector("#feedx_sprouts_container [data-attachment-type='STATUS']");
-  By messageInput = By.cssSelector("#feedx_sprouts_container [data-testid='status-attachment-mentions-input']");
+  By messageInput = By
+      .cssSelector("#feedx_sprouts_container [data-testid='status-attachment-mentions-input']");
   By lastMessage = By.cssSelector("div .userContent > div > p");
-  By postButton = By.cssSelector("#feedx_sprouts_container [data-testid='react-composer-post-button']");
+  By postButton = By
+      .cssSelector("#feedx_sprouts_container [data-testid='react-composer-post-button']");
 
   public NewsFeedPage(WebDriver driver, WebDriverWait wait) {
     super(driver, wait);
